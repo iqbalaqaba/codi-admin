@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ELN Admin Pages</title>
+
+<!-- Import Script Start Here -->
+	<!-- Custom Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,300' rel='stylesheet' type='text/css'>
+
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css">
+    <link href="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ripples.min.css">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" script="js/material.min.js"></script>
+    <script type="text/javascript" script="js/ripples.min.js"></script>
+
+<!-- Import Script End Here -->
+
+<style>
+
+/* Common Style Start Here */
+	body{
+		height: 100%;
+		font-family: 'Roboto';
+		font-weight: 300;	
+		background-color: #333;
+	}
+
+/* Navbar */
+	a{
+		color: white;
+		font-weight: 300;
+	}
+
+	.nav-link{
+		font-weight: 300;
+	}
+
+/* Card */
+
+	.card {
+		margin-top: 40px;
+		margin-left: 100px;
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	    transition: 0.3s;
+	    width: 75%;
+	    background-color: white;
+	    color: white;
+	}
+
+	.card:hover {
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	img {
+	    border-radius: 5px 5px 0 0;
+	}
+
+	.containers {
+		min-height: 200px;
+	    padding: 2px 20px;
+	    text-align: center;
+	}
+
+	.text-centers{
+		text-align: center;
+	}
+
+	.cards:hover{
+		text-decoration: none;
+	}
+
+/* Navbar */
+	.active{
+		font-weight: bolder;
+	}
+
+	.navbar-default{
+		border-radius: 0px;
+		min-height: 80px !important;
+		padding-top: 10px;
+		font-size: 20px;
+		font-weight: 400;
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+
+/* Posting Panels */
+	.form-control{
+		border-radius: 3px 3px 3px 3px;
+	}
+
+	.input-group,.input-group-lg, .form-control, {
+		border-radius:0px;
+	}
+</style>
+
+</head>
+<body>
+<!--  Navbar -->
+	<div class="row">
+		<div class="col-lg-12">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+				    <div class="navbar-header">
+				      <a class="navbar-brand" href="#"> <b> Posting Page </b></a>
+				    </div>
+				    <ul class="nav navbar-nav">
+				      <li class="active"><a href="#"> Post </a></li>
+				      <li><a href="#">Dashboard</a></li>
+				      <li><a href="#">User</a></li>
+				      <li><a href="#">Location</a></li>
+				      <li><a href="#">Schedule</a></li>
+				    </ul>
+				    <ul class="nav navbar-nav navbar-right">
+				      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> &nbsp Back to Dashboard</a></li>
+				    </ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- Navbar End -->
+<!-- Panel Post -->
+<div class="container-fluid" style="padding-top:15px;">
+	<div class="row">
+	<div class="col-lg-3"></div>
+      <div class="col-md-6">
+        <div class="well bs-component">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend class="text-center">Post Something Great Here</legend>
+              <div class="form-group">
+                <label for="title" class="col-md-2 control-label"> Post Title</label>
+                <div class="col-md-10">
+                  <input type="email" class="form-control" id="title" placeholder="Enter Your Post Title here">
+                </div>
+              </div>
+             <div class="form-group">
+                <label for="textArea" class="col-md-2 control-label">Textarea</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" rows="3" id="textArea" placeholder="Enter Your Story here"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputFile" class="col-md-3 control-label">Pictures Upload</label>
+                <div class="col-md-8">
+                  <input type="text" readonly class="form-control" placeholder="Browse for your file">
+                  <input type="file" id="inputFile" multiple>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-10 col-md-offset-7">
+                  <button type="button" class="btn btn-default">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+	</div>
+</div>
+<!-- Panel Post -->
+
+<!-- Help UX -->
+<div class="container-fluid text-center" style="margin-top:10px;">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 style="color:white; font-weight:300;"> Contact : <strong> <a href="mailto:edp@werkudaratravel.com"> edp@werkudaratravel.com </a> </strong> or call <strong> <a href="tel:+62717564517"> +62717564517 </a> </strong> if you find any trouble. </h4>
+		</div>
+	</div>
+</div>
+<!-- Help UX -->
+</body>
+</html>

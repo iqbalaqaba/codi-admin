@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ELN Admin Pages</title>
+
+<!-- Import Script Start Here -->
+	<!-- Custom Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Import Script End Here -->
+
+<style>
+/* Common Style Start Here */
+	body{
+		height: 100%;
+		font-family: 'Roboto';
+		font-weight: 300;	
+		background: #348F50; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #348F50 , #56B4D3); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #348F50 , #56B4D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+	}
+
+/* Navbar */
+	a{
+		color: white;
+		font-weight: 300;
+	}
+
+	.nav-link{
+		font-weight: 300;
+	}
+
+/* Card */
+
+	.card {
+		margin-top: 40px;
+		margin-left: 100px;
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	    transition: 0.3s;
+	    width: 75%;
+	    background-color: white;
+	    color: white;
+	}
+
+	.card:hover {
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	img {
+	    border-radius: 5px 5px 0 0;
+	}
+
+	.containers {
+		min-height: 200px;
+	    padding: 2px 20px;
+	    text-align: center;
+	}
+
+	.text-centers{
+		text-align: center;
+	}
+
+	.cards:hover{
+		text-decoration: none;
+	}
+</style>
+
+</head>
+<body>
+<!--  Navbar -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<nav class="navbar">
+				<div class="container-fluid">
+				    <div class="navbar-header">
+				      <a class="navbar-brand" href="#">Danone ELN Admin Page</a>
+				    </div>
+				    <ul class="nav navbar-nav">
+				      <li class="active"><a href="#">Dashboard</a></li>
+				      <li><a href="#">Post</a></li>
+				      <li><a href="#">User</a></li>
+				      <li><a href="#">Location</a></li>
+				      <li><a href="#">Schedule</a></li>
+				    </ul>
+				    <ul class="nav navbar-nav navbar-right">
+				      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> &nbsp Logout</a></li>
+				    </ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+<!--  Navbar End-->
+<!-- Just hello
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 text-center">
+			<h1> Welcome, Admin</h1>
+		</div>
+	</div>
+</div>
+<!-- Just hello -->
+<!-- Menu Panel -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-6">
+				<div class="card" style="background-color: #00bcd4">
+					<a class="cards" href="#">
+						<div class="containers">
+							<h1> <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i> </h1>
+							<h3><b> Posting </b></h3> 
+							<p> You can Create, Modify, and Delete post here. </p> 
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="card" style="background-color:#ff5722">
+					<a class="cards" href="#">
+						<div class="containers">
+							<h1> <i class="fa fa-user fa-2x" aria-hidden="true"></i> </h1>
+							<h2><b> User Management </b></h2> 
+							<p> You can Create, Modify, and Delete User here. </p> 
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12" style="margin-top:50px;">
+			<div class="col-lg-6">
+				<div class="card" style="background-color:#7f8c8d">
+					<a class="cards" href="#">
+						<div class="containers">
+							<h1> <i class="fa fa-map fa-2x" aria-hidden="true"></i> </h1>
+							<h2><b> Location </b></h2> 
+							<p> You can Create, Modify, and Delete Location here. </p> 
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="card" style="background-color:#4caf50">
+					<a class="cards" href="#">
+						<div class="containers">
+							<h1> <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i> </h1>
+							<h2><b> Schedule </b></h2> 
+							<p> You can Create, Modify, and Delete Agenda here. </p> 
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Menu Panel End-->
+<!-- Help UX -->
+<div class="container-fluid text-center" style="margin-top:40px;">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 style="color:white; font-weight:300;"> Contact : <strong> <a href="mailto:edp@werkudaratravel.com"> edp@werkudaratravel.com </a> </strong> or call <strong> <a href="tel:+62717564517"> +62717564517 </a> </strong> if you find any trouble. </h4>
+		</div>
+	</div>
+</div>
+<!-- Help UX -->
+</body>
+</html>
